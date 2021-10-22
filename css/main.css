@@ -1,0 +1,1028 @@
+
+/*HEADER SECTION*/
+.header {
+    width: 100%;
+    height: 160px;
+    position: relative;
+}
+
+.header_box {
+    width: 1420px;
+    height: 160px;
+    margin: 0 auto;
+    /*    position: relative;*/
+    display: flex;
+
+}
+
+/*
+.topMenubox {
+   
+    width: 100%;
+    height: 50px;
+        background: red;
+
+
+}
+*/
+
+.topMenu {
+    float: right;
+    margin-top: 10px;
+    /*
+    position: absolute;
+    top: 28px;
+    right: 0;
+*/
+    display: flex;
+}
+
+.topMenu > li {
+    margin-left: 20px;
+}
+
+.topMenu > li > a {
+    display: block;
+    font-size: 12px;
+}
+
+.topMenu > li > a:hover {
+    color: #ba000c;
+}
+
+.logo {
+    clear: both;
+    margin-top: 45px;
+    width: 105.6px;
+    height: 88px;
+}
+
+
+
+.logo img {
+    width: 105.6px;
+    height: 88px;
+    display: block;
+}
+
+.menuBox {
+    flex: 1
+}
+
+
+
+
+.navMenu {
+    clear: both;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 80px;
+    height: auto;
+
+
+}
+
+.navMenu > li {
+    flex: 1;
+    text-align: center;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.navMenu > li:hover > a {
+    /* background: #6f6f6f; */
+    /*        background: #ba000c;*/
+
+    /* color: #fff; */
+}
+
+
+.navMenu > li > a {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.navMenu>li>span{
+    display: block;
+    /* width: 0%; */
+    transform: scaleX(0);
+    height: 5px;
+    background-color: #ba000c;
+    transition: 0.6s;
+
+}
+.navMenu>li:hover>span{
+    transform: scaleX(1);
+
+}
+.navMenu .sub {
+    position: relative;
+    top:20px;
+
+    max-height: 0;
+    visibility: hidden;
+    width: 100%;
+    /* box-sizing: border-box; */
+    text-align: center;
+    z-index: 999;
+    transition: 0.8s;
+    opacity: 0;
+
+
+
+}
+
+.navMenu .sub.show {
+    max-height: 280px;
+    visibility: visible;
+    transition: 0.8s;
+    opacity: 1;
+}
+
+
+
+.navMenu .sub a {
+    display: block;
+    padding-top: 10px;
+    color: #fff;
+
+
+
+}
+
+
+
+#subBg {
+    visibility: hidden;
+    height: 0;
+    width: 100%;
+
+    background: #6f6f6f;
+    position: relative;
+    top:0px;
+    z-index: 998;
+    transition: 0.8s;
+    opacity: 0;
+}
+
+#subBg.subBg {
+    height: 286px;
+    visibility: visible;
+    transition: 0.8s;
+    opacity: 1;
+
+
+}
+
+
+
+
+
+/*BANNER SECTION*/
+.banner {
+
+    margin: 0 auto;
+    width: 1920px;
+    height: 700px;
+    /* overflow: hidden; */
+    position: relative;
+
+
+}
+
+.banner_li {
+    display: flex;
+    width: 400%;
+    position: absolute;
+    /* left:-100%; */
+    
+
+}
+
+.banner_li li {
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+}
+
+.slideCon {
+    /* opacity: 0;
+    transition: 1s; */
+}
+
+.slideCon.ViewImg {
+    /* opacity: 1;
+    transition: 1s; */
+}
+
+/*
+.banner_li .bannerFirst {
+
+    z-index: 1;
+}
+*/
+
+.btn_box {
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 100px);
+    /*            부모영역에 50% 그리고 나의 너비값 50px만큼 다시 마이너스*/
+    width: 200px;
+    /*            margin은 absolute일떄 안먹힘*/
+    z-index: 2;
+}
+
+.btn_box li {
+    width: 40px;
+    height: 40px;
+    float: left;
+
+}
+
+.btn_box li button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #333;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+.btn_box li button.on {
+    background: #ff2d76;
+}
+.btn_box li span{
+    position: absolute;
+    z-index: -1;
+}
+/*
+.btn_box li span:after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 30px;
+    height: 30px;
+     border-radius: 30px;
+    
+}
+*/
+
+/*drink*/
+.drinkWrap {
+    width: 1920px;
+    height: 900px;
+    padding-top: 150px;
+    box-sizing: border-box;
+    background: #f0e9e0;
+    margin: 0 auto;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+
+}
+
+.drinkBox {
+    background: #f0e9e0;
+
+    width: 1420px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+
+
+
+}
+
+.drinkWrap .drink_tit {
+    font-weight: bold;
+    font-size: 4rem;
+    color: #000;
+
+    border-radius: 10px;
+    width: 1420px;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration-line: overline;
+}
+
+.drinkBox .drink_menu {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.drinkBox .drink_menu li {
+
+    width: 225px;
+    height: 500px;
+    position: relative;
+
+
+}
+
+.drinkBox .drink_menu li:last-child {
+    margin-right: 0;
+
+}
+
+
+.drinkBox .drink_menu li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+.drink_menu li:nth-child(1) a {
+    background: url(../images/drink_coffe3.png) no-repeat;
+    background-position: center center;
+    transition: 0.5s;
+
+    background-size: 80%;
+
+}
+
+.drink_menu li:nth-child(1) a:hover {
+
+    background-size: 90%;
+
+    transition: 0.5s;
+
+}
+
+.drink_menu li:nth-child(2) a {
+    background: url(../images/drink_non_coffe3.png) no-repeat;
+    background-size: 80%;
+
+    background-position: center center;
+
+
+    transition: 0.5s;
+
+}
+
+.drink_menu li:nth-child(2) a:hover {
+    background-size: 90%;
+
+    transition: 0.5s;
+
+}
+
+.drink_menu li:nth-child(3) a {
+    background: url(../images/drink_hollyccino3.png) no-repeat;
+
+    background-size: 80%;
+
+    background-position: center center;
+
+
+    transition: 0.5s;
+
+}
+
+.drink_menu li:nth-child(3) a:hover {
+
+    background-size: 90%;
+
+    transition: 0.5s;
+
+}
+
+.drink_menu li:nth-child(4) a {
+    background: url(../images/drink_sparkling3.png) no-repeat;
+
+    background-size: 90%;
+
+    background-position: center center;
+
+
+    transition: 0.5s;
+
+}
+
+.drink_menu li:nth-child(4) a:hover {
+
+    background-size: 100%;
+
+    transition: 0.5s;
+
+}
+
+.drink_menu li:nth-child(5) a {
+    background: url(../images/drink_bakery3.png) no-repeat;
+    background-position: center center;
+    /*    transform: scale(0.9);*/
+    background-size: 90%;
+
+    transition: 0.5s;
+
+}
+
+.drink_menu li:nth-child(5) a:hover {
+    transition: 0.5s;
+    /*    transform: scale(1);*/
+    background-size: 100%;
+
+}
+
+
+
+
+.drinkBox .drink_menu li a p {
+
+    text-align: center;
+    line-height: 880px;
+    /*    margin-top: 300px;*/
+    font-size: 1.4rem;
+    font-weight: 1000;
+
+    /*    width: 100%;*/
+
+}
+
+.drinkBox .drink_menu li a:hover p {
+    color: #b68545;
+}
+
+.two_main {
+
+
+    width: 1920px;
+    height: 750px;
+    margin: 0 auto;
+    position: relative;
+    /*     border-top: 5px solid #fff;*/
+    border-bottom: 5px solid #fff;
+}
+
+.two_main_ul {
+
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+
+
+
+
+.Mem {
+    position: relative;
+}
+
+
+.Mem_box {
+
+    display: block;
+    width: 1170px;
+    height: 750px;
+    transform: translateX(-10px) skewX(-28.6deg);
+
+    transform-origin: left top;
+    overflow: hidden;
+
+
+
+}
+
+.Mem_box .Mem_box1 {
+    position: absolute;
+    left: 200px;
+    top: 0;
+
+    width: 100%;
+    height: 750px;
+    background: url(../images/mebership5.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    transform: translateX(10px) skewX(28.6deg);
+
+
+}
+
+.Mem_box1:hover {
+
+    transition: 0.7s;
+    background-size: 110%;
+}
+
+.Mem .Mem_txt_1 {
+    display: block;
+    position: absolute;
+    left: 500px;
+    top: 30px;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.Mem .Mem_txt_2 {
+    display: block;
+    position: absolute;
+    left: 600px;
+    top: 120px;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #ba000c;
+}
+
+
+
+
+.Mall {
+    position: relative;
+}
+
+.Mall_box {
+
+    display: block;
+    width: 1170px;
+    height: 750px;
+    transform: translatex(-10px) skew(-28.6deg);
+    transform-origin: right top;
+
+    overflow: hidden;
+
+}
+
+.Mall_box1 {
+    position: absolute;
+    left: -220px;
+    top: 0;
+
+    width: 100%;
+    height: 750px;
+    background: url(../images/mall1.png) no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    transform: translateX(10px) skewX(28.6deg);
+}
+
+.Mall_box1:hover {
+    transition: 0.7s;
+    background-size: 110%;
+}
+
+.Mall .Mall_txt_1 {
+    display: block;
+    position: absolute;
+    left: -300px;
+    bottom: 30px;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.Mall .Mall_txt_2 {
+    display: block;
+    position: absolute;
+    left: 70px;
+    bottom: 30px;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #ba000c;
+}
+
+
+.section {
+    background: url(../images/section_bg.jpg);
+    width: 1920px;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 5px solid #fff;
+}
+
+.section:after {
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    z-index: 1;
+    width: 1920px;
+    height: 450px;
+    background: rgba(40, 89, 139, 0.5);
+
+
+}
+
+.contentBox {
+    width: 850px;
+    height: 300px;
+    position: absolute;
+    top: calc(50% - 150px);
+    z-index: 2;
+    right: 50px;
+
+}
+
+.contentBox .sectionTxt {
+    width: 100%;
+    font-size: 4.6em;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    text-decoration-line: underline;
+
+}
+
+.contentBox .sectionCon {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+
+}
+
+.sectionCon .Con {
+
+
+
+    width: 30%;
+    height: 65px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 65px;
+
+
+}
+
+.sectionCon .Con a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    border: 3px solid rgba(255, 255, 255, 0.8);
+}
+
+.sectionCon .Con:hover a {
+    border-color: transparent;
+    background: rgba(186, 0, 12, 0.7);
+    color: #fff;
+}
+
+.section1 {
+    width: 1920px;
+    background: #faf9f7;
+    margin: 0 auto;
+    position: relative;
+    height: 680px;
+}
+
+.section1:after {
+    content: "";
+    position: absolute;
+    clear: both;
+    width: 1920px;
+    height: 220px;
+    background: #bcbaba;
+
+}
+
+.section1 .section1Con {
+    width: 1420px;
+    height: 400px;
+
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: calc(50% - 710px);
+    top: calc(50% - 200px);
+    z-index: 2;
+}
+
+.section1Con .search {
+    width: 450px;
+    height: 380px;
+
+    background: url(../images/searchbg1.jpg) no-repeat;
+    position: relative;
+    box-shadow: 3px 1px 4px rgba(0, 0, 0, 1);
+}
+
+.section1Con .search:after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 450px;
+    height: 380px;
+
+
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.search .searchConbox {
+    position: absolute;
+    z-index: 1;
+    width: 370px;
+    height: 200px;
+    left: calc(50% - 185px);
+    top: calc(50% - 100px);
+}
+
+.searchConbox p {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    color: #fff;
+}
+
+.inputSearch {
+    width: 350px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 4px solid #fff;
+    border-radius: 50px;
+    display: flex;
+}
+
+.inputSearch .searchText {
+    display: block;
+    background-color: transparent;
+    width: 80%;
+    height: 50px;
+    border-right: 4px dotted #fff;
+    color: #fff;
+    text-indent: 30px;
+    font-size: 1.7em;
+}
+
+.inputSearch button {
+    display: block;
+    width: 20%;
+    height: 50px;
+    background-color: transparent;
+    font-size: 2.3em;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.section1Con .board {
+    width: 450px;
+    height: 380px;
+    border: 3px solid #ba000c;
+    background-color: #faf9f7;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    padding-top: 20px;
+
+}
+
+.board .newTit {
+    font-size: 2.2em;
+    font-weight: 600;
+    text-indent: 10px;
+    /*    margin-top: 7px;*/
+    /*    margin-bottom: 10px;*/
+}
+
+.board i {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.board .boardTxt {
+
+    margin: 0 auto;
+    width: 400px;
+    height: 190px;
+    font-size: 1.3em;
+    /*    margin-bottom: 10px;*/
+    /*    background: blue;*/
+
+
+}
+
+.boardTxt ul {
+    clear: both;
+    width: 400px;
+    height: 190px;
+    /*    background: red;*/
+    margin-bottom: 10px;
+}
+
+.boardTxt::before {
+    content: "";
+    display: block;
+    clear: both;
+    width: 400px;
+    height: 3px;
+    background: #ba000c;
+    /*    position: absolute;*/
+    /*    z-index: 5;*/
+
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+}
+
+.boardTxt::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 400px;
+    height: 3px;
+    background: #ba000c;
+    margin: 0 auto;
+    /*    margin-top: 10px;*/
+
+}
+
+.boardTxt > ul li a {
+    float: left;
+    display: block;
+    width: 270px;
+    /*    제목 말줄임표*/
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.boardTxt > ul li span {
+    float: right;
+    font-size: 0.9em;
+}
+
+
+.snsTit {
+    font-size: 2.2em;
+    font-weight: 600;
+    text-indent: 10px;
+    margin-top: 7px;
+    text-align: center;
+}
+
+.snsBox {
+    margin-top: 20px;
+}
+
+.snsBox ul {
+    display: flex;
+    justify-content: center;
+}
+
+.snsBox ul li img {
+    width: 65px;
+    height: 69px
+}
+
+
+.section1Con .academy {
+    width: 450px;
+    height: 380px;
+    background: url(../images/academybg.jpg) no-repeat;
+    /*background-size: 100% 100%;*/
+    background-position: 70% 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+
+
+
+
+
+.academy a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.academy h3 {
+    font-size: 2.2em;
+    font-weight: 600;
+    text-indent: 10px;
+    /*    margin-top: 7px;*/
+    position: absolute;
+    top: 7px;
+    z-index: 3;
+    color: #fff;
+    left: 7px;
+    transition: 0.6s;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 1);
+
+
+}
+
+.hoverBox {
+    /*
+    content: "";
+    display: block;
+    clear: both;
+*/
+    width: 100%;
+    /*    height: 480px;*/
+    height: 100%;
+
+
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    transition: 0.6s;
+    opacity: 1;
+}
+
+/*
+.academy a:hover h3{
+    color:#ba000c;
+}
+*/
+
+.academy a:hover .hoverBox {
+    opacity: 0;
+}
+
+
+
+
+.footer {
+    width: 100%;
+    height: 250px;
+    margin-top: 50px;
+    background: #ba000c;
+
+
+}
+
+.footer .ft_txt {
+    position: relative;
+    width: 1420px;
+    margin: 0 auto;
+    height: 250px;
+
+}
+
+.footer .ft_a_box {
+    position: absolute;
+    top: 45px;
+
+
+    overflow: hidden;
+}
+
+.ft_a_box > li {
+    float: left;
+    margin-right: 20px;
+}
+
+.ft_a_box > li:last-child {
+    margin-right: 0;
+}
+
+.ft_a_box a {
+    display: block;
+    color: #fff;
+    font-size: 0.9em;
+
+}
+
+.ft_a_box > li:first-child > a {
+    color: #fc0;
+}
+
+.sns {
+    clear: both;
+    position: absolute;
+    top: 45px;
+    right: 0;
+}
+
+.sns > li {
+    float: left;
+    margin-left: 15px;
+
+}
+
+.sns img {
+    display: block;
+}
+
+.footer .ft_txt_box {
+    position: absolute;
+    top: 100px;
+    color: #fff;
+    font-size: 1em;
+}
+
+.footer .ft_txt_box address {
+    font-style: normal;
+}
+
+.footer .ft_txt_box a {
+    color: #fc0;
+}
