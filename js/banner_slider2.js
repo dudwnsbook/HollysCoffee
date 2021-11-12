@@ -1,6 +1,6 @@
-var slideWrap = document.getElementsByClassName('banner');
-var slideUl = document.getElementsByClassName("banner_li");
-var slideCou = document.getElementsByClassName('slideCon');
+var slideWrap = document.getElementsByClassName('banner-wrap');
+var slideUl = document.getElementsByClassName("slider-box");
+var slideCou = document.getElementsByClassName('slider-con');
 
 
 var bannLen = slideCou.length;
@@ -10,21 +10,13 @@ var count=0;
 var currentIndex;
 var prevIndex;
 var timeSlide;
-var btn = document.getElementsByClassName('item');
+var btn = document.getElementsByClassName('dot');
 var btnLen = btn.length;
 
 
-//function FadeSliderBtn(obj2){
-//    slideCou[obj2].classList.add('ViewImg');
-//    btn[count].classList.add('on');
-//    if(obj2!=count){
-//         slideCou[count].classList.remove('ViewImg');
-//        btn[count].classList.remove('on');
-//    }
-//    count=obj2;
-//}
 
-function FadeSlider(obj) {
+
+function bannerSlider(obj) {
     slideUl[0].style.left=(-100 * obj) +"%";
     slideUl[0].style.transition="1s";
     if(obj==4){
@@ -39,22 +31,18 @@ function FadeSlider(obj) {
         }
     }
     
-    // slideCou[obj].classList.add('ViewImg');
-    // prevIndex = count % bannLen;
-    // slideCou[prevIndex].classList.remove( 'ViewImg');
+ 
     
     count=obj;
 
-//    autoSlide(count);
 }
 for (var a = 0; a<btnLen; a++){
     btn[a].addEventListener('click',function(e){
         
         
         currentIndex=e.target.getAttribute("data-value")-1;
-        // clearInterval(timeSlide); 
-        console.log(currentIndex);
-        FadeSlider(currentIndex);
+     
+        bannerSlider(currentIndex);
         
     })
  }
@@ -62,8 +50,7 @@ function autoSlide() {
     timeSlide =setInterval(function () {
         currentIndex = (count+1) % bannLen;
         
-        console.log(currentIndex);
-        FadeSlider(currentIndex);
+        bannerSlider(currentIndex);
 
 
     }, 4000);
@@ -78,7 +65,7 @@ leftBtn.addEventListener("click",function(){
         currentIndex=bannLen-1;
         
     }
-    FadeSlider(currentIndex);
+    bannerSlider(currentIndex);
 })
 rightBtn.addEventListener("click",function(){
     if(currentIndex<3){
@@ -87,7 +74,7 @@ rightBtn.addEventListener("click",function(){
     else{
         currentIndex=0;
     }
-    FadeSlider(currentIndex);
+    bannerSlider(currentIndex);
 })
 
 
@@ -95,7 +82,7 @@ autoSlide();
 
 slideWrap[0].addEventListener('mouseenter', function () {
     clearInterval(timeSlide); 
-    console.log("??")
+
 });
 slideWrap[0].addEventListener('mouseleave', function () {
     autoSlide();

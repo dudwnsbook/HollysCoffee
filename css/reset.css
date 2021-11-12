@@ -11,6 +11,7 @@ html {
     height: 100vh;
     /*    overflow-x: hidden; */
     font-family: 'Nanum Gothic', sans-serif;
+    box-sizing:border-box;
 }
 
 html {

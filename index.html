@@ -16,145 +16,133 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-
+    <script src="js/prefixfree.min.js"></script>
 </head>
 
 <body>
 
     <header class="header">
-        
-        <div class="header_box">
+        <div class="header-wrap">
+            <div class="header-box">
+                <div class="header_top clearfix">
 
-
-            <h1 class="logo"><a href="#"><img src="images/main_logo.png" alt="할리스 커피 로고"></a></h1>
-
-            <nav class="menuBox clearfix">
-
-                <ul class="topMenu ">
-                    <li><a href="#">아카데미</a></li>
-                    <li><a href="#">멤버십 로그인</a></li>
-                    <li><a href="#">멤버십 가입</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">English</a></li>
-                </ul>
-
-
-                <ul class="navMenu clearfix">
-                    <li>
-                        <a href="#" class="subTitle">Menu</a><span></span>
-                        <ul class="sub">
-                            <li><a href="#">NEW COFFEE</a></li>
-                            <li><a href="#">COFFEE</a></li>
-                            <li><a href="#">NON-COFFEE</a></li>
-                            <li><a href="#">할리치노 & 빙수</a></li>
-                            <li><a href="#">스파클링</a></li>
-                            <li><a href="#">베이커리 & 스낵</a></li>
-                            <li><a href="#">MD</a></li>
+                    <ul class="top_menu">
+                        <li><a href="#">아카데미</a></li>
+                        <li><a href="#">멤버십 로그인</a></li>
+                        <li><a href="#">멤버십 가입</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+                <div class="header_bottom clearfix">
+                    <h1 class="logo"><a href="#"><img src="images/main_logo.png" alt="할리스 커피 로고"></a></h1>
+                    <nav class="bottom_menubox">
+    
+                        <ul class="bottom_menu">
+                            <li>
+                                <a href="#" class="depth_tit">Menu</a><span></span>
+                                <ul class="depth">
+                                    <li><a href="#">NEW COFFEE</a></li>
+                                    <li><a href="#">COFFEE</a></li>
+                                    <li><a href="#">NON-COFFEE</a></li>
+                                    <li><a href="#">할리치노 & 빙수</a></li>
+                                    <li><a href="#">스파클링</a></li>
+                                    <li><a href="#">베이커리 & 스낵</a></li>
+                                    <li><a href="#">MD</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="depth_tit">HOLLYS Mall</a><span></span>
+                                <ul class="depth">
+                                    <li><a href="#">할리스콘</a></li>
+                                    <li><a href="#">할리스 카드</a></li>
+                                    <li><a href="#">구매내역</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="depth_tit">MemberShip</a><span></span>
+                                <ul class="depth">
+                                    <li><a href="#">스마트 오더</a></li>
+                                    <li><a href="#">멤버십 혜택</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="depth_tit">HOLLYS News</a><span></span>
+                                <ul class="depth">
+                                    <li><a href="#">Notice</a></li>
+                                    <li><a href="#">Event</a></li>
+    
+                                </ul>
+                            </li>
+                            <li><a href="#" class="depth_tit">Store</a><span></span>
+                                <ul class="depth">
+                                    <li><a href="#">매장검색</a></li>
+    
+                                </ul>
+                            </li>
+                            <li><a href="#" class="depth_tit">HOLLYS is</a><span></span>
+                                <ul class="depth">
+                                    <li><a href="#">HOLLYS</a></li>
+                                    <li><a href="#">할리스 위치 및 연락처</a></li>
+                                    <li><a href="#">채용안내</a></li>
+                                    <li><a href="#">가맹문의 및 절차</a></li>
+                                    <li><a href="#">B2B 사업 소개</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                    <li><a href="#" class="subTitle">HOLLYS Mall</a><span></span>
-                        <ul class="sub">
-                            <li><a href="#">할리스콘</a></li>
-                            <li><a href="#">할리스 카드</a></li>
-                            <li><a href="#">구매내역</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="subTitle">MemberShip</a><span></span>
-                        <ul class="sub">
-                            <li><a href="#">스마트 오더</a></li>
-                            <li><a href="#">멤버십 혜택</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" class="subTitle">HOLLYS News</a><span></span>
-                        <ul class="sub">
-                            <li><a href="#">Notice</a></li>
-                            <li><a href="#">Event</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a href="#" class="subTitle">Store</a><span></span>
-                        <ul class="sub">
-                            <li><a href="#">매장검색</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a href="#" class="subTitle">HOLLYS is</a><span></span>
-                        <ul class="sub">
-                            <li><a href="#">HOLLYS</a></li>
-                            <li><a href="#">할리스 위치 및 연락처</a></li>
-                            <li><a href="#">채용안내</a></li>
-                            <li><a href="#">가맹문의 및 절차</a></li>
-                            <li><a href="#">B2B 사업 소개</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                        
+                    </nav>
+                </div>
+            </div>
                 
-            </nav>
+            <div id="depth_bg"></div>
         </div>
-        <div id="subBg"></div>
     </header>
    
-    <main class="banner">
-        <a class="banBtn leftBtn"><i class="fas fa-angle-left"></i></a>
-        <a class="banBtn rightBtn"><i class="fas fa-angle-right"></i></a>
-        <ul class="banner_li">
-            <li class="slideCon"><a href="#"><img src="images/main_banner1.jpg" alt="배너 이미지"></a></li>
-            <li class="slideCon"><a href="#"><img src="images/main_banner2.jpg" alt="배너 이미지"></a></li>
-            <li class="slideCon"><a href="#"><img src="images/main_banner3.jpg" alt="배너 이미지"></a></li>
-            <li class="slideCon"><a href="#"><img src="images/main_banner4.jpg" alt="배너 이미지"></a></li>
+    <main class="banner-wrap">
+        <a class="banner-btn leftBtn"><i class="fas fa-angle-left"></i></a>
+        <a class="banner-btn rightBtn"><i class="fas fa-angle-right"></i></a>
+        <ul class="slider-box">
+            <li class="slider-con"><a href="#"><img src="images/main_banner1.jpg" alt="배너 이미지"></a></li>
+            <li class="slider-con"><a href="#"><img src="images/main_banner2.jpg" alt="배너 이미지"></a></li>
+            <li class="slider-con"><a href="#"><img src="images/main_banner3.jpg" alt="배너 이미지"></a></li>
+            <li class="slider-con"><a href="#"><img src="images/main_banner4.jpg" alt="배너 이미지"></a></li>
 
         </ul>
-        <ul class="btn_box">
-            <li ><button class="item on" data-value="1"></button></li>
-            <li><button class="item" data-value="2"></button></li>
-            <li ><button class="item" data-value="3"></button></li>
-            <li> <button class="item" data-value="4"></button></li>
+        <ul class="dotBtn-box">
+            <li ><button class="dot on" data-value="1"></button></li>
+            <li><button class="dot" data-value="2"></button></li>
+            <li ><button class="dot" data-value="3"></button></li>
+            <li> <button class="dot" data-value="4"></button></li>
 
         </ul>
     </main>
-    <div class="drinkWrap">
-        <div class="drink_tit">EVERYTHING ABOUT HOLLYS</div>
-        <div class="drinkBox">
+    <div class="drink-wrap">
+        <div class="drink-tit">EVERYTHING ABOUT HOLLYS</div>
+        <div class="drink-box">
 
             <ul class="drink_menu">
                 <li><a href="#">
-
                         <p>COFFEE</p>
-
-
-
                     </a>
                 </li>
                 <li>
                     <a href="#">
-
                         <p>NON_COFFEE</p>
-
                     </a>
                 </li>
                 <li>
                     <a href="#">
-
                         <p>할리치노 &amp; 빙수 </p>
-
                     </a>
                 </li>
                 <li>
                     <a href="#">
-
                         <p>스파클링</p>
-
                     </a>
                 </li>
                 <li>
                     <a href="#">
-
                         <p>베이커리 &amp; 스낵</p>
-
                     </a>
                 </li>
-
-
             </ul>
         </div>
     </div>
